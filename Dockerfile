@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:11.5
 RUN apt -y update 
 RUN apt -y install openssl procps bsdmainutils git host
 RUN cd /opt ; git clone https://github.com/drwetter/testssl.sh.git
